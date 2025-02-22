@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    color: #446ad5;
+    background-color: #110f27;
+    font-family: "IBM Plex Mono", monospace, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    color: #f2ce83;
+    text-align: center;
+    gap: 100px;
+}
+
+.footer a {
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+
+.footer a:hover {
+    color: #f2ce83;
+}
+
+.content {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.div-wtext {
+    width: 75vw;
+    font-size: 3.5rem;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+@media (max-width: 1200px) {
+    .div-wtext {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .div-wtext {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .div-wtext {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .div-wtext {
+        font-size: 1.5rem;
+        width: 90vw;
+    }
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.correct {
+    color: aliceblue;
+}
+
+.wrong {
+    color: #c6915e;
+}
+
+.cursor {
+    background-color: #f2ce83;
+    color: #141414;
+    animation: cursor 0.5s infinite alternate;
+    border-radius: 5px;
+}
+
+@keyframes cursor {
+    from {
+        opacity: 0.25;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
