@@ -57,6 +57,10 @@ body {
 }
 
 @media (max-width: 992px) {
+    .footer {
+        display: none;
+    }
+
     .div-wtext {
         font-size: 2.5rem;
     }
